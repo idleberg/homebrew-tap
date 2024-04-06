@@ -30,4 +30,9 @@ jobs:
       run: brew tap idleberg/asahi
 
     - name: Audit Formulas
-      run:  for file in ./Formula/*.rb; do echo "Testing $file"; brew audit idleberg/asahi/$(basename ${file%.rb}) --online; done
+      run: |
+        for file in ./Formula/*.rb
+        do
+          echo "Testing $file"
+          brew audit idleberg/asahi/$(basename ${file%.rb}) --online
+        done
