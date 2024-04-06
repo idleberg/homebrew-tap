@@ -1,4 +1,4 @@
-name:  audit
+name: audit
 
 on:
   push:
