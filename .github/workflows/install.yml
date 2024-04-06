@@ -30,6 +30,6 @@ jobs:
       run: |
         for file in ./Formula/*.rb
         do
-          echo "Testing $file"
-          brew idleberg idleberg/asahi/$(basename ${file%.rb})
+          echo "Installing $file"
+          brew idleberg idleberg/asahi/$(basename ${file})
         done
