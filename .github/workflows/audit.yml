@@ -24,7 +24,9 @@ jobs:
 
     - name: Update Homebrew
       if: matrix.os != 'ubuntu-latest'
-      run: brew update --auto-update
+      run: |
+        brew update --auto-update
+        brew link --overwrite go
 
     - name: Tap Repository
       run: brew tap idleberg/asahi
