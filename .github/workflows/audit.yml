@@ -26,7 +26,6 @@ jobs:
       if: matrix.os != 'ubuntu-latest'
       run: |
         brew update --auto-update
-        brew unlink go@1.21
 
     - name: Tap Repository
       run: brew tap idleberg/asahi
@@ -35,7 +34,7 @@ jobs:
       run: |
         for file in ./Formula/*.rb
         do
-          echo "Installing $file"
+          echo "Auditing $file"
           brew audit idleberg/asahi/$(basename ${file%.rb}) --online
         done
 
