@@ -12,6 +12,7 @@ Tap this repository to install the available formulas:
 
 ```sh
 $ brew tap idleberg/asahi
+$ brew install <formula>
 ```
 
 Alternatively, you can install any packages skipping the tap step:
