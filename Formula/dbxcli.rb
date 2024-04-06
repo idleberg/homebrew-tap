@@ -1,5 +1,5 @@
 class Dbxcli < Formula
-  desc "Command line client for Dropbox"
+  desc "Command-line client for Dropbox"
   homepage "https://github.com/dropbox/dbxcli"
   license "MIT"
 
@@ -15,7 +15,7 @@ class Dbxcli < Formula
   end
 
   def install
-    bin.install "dbxcli-#{OS.mac? ? 'darwin-amd64' : 'linux-' + Hardware::CPU.arch}-amd64" => "dbxcli"
+    bin.install "dbxcli-#{OS.mac? ? "darwin-amd64" : "linux-" + Hardware::CPU.arch}-amd64" => "dbxcli"
   end
 
   test do
