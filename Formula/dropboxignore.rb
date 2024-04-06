@@ -1,5 +1,5 @@
 class Dropboxignore < Formula
-  desc "CLI tool for ignoring files in Dropbox"
+  desc "Command-line tool for ignoring files in Dropbox"
   homepage "https://dropboxignore.simakis.me/"
   url "https://github.com/sp1thas/dropboxignore/archive/refs/tags/v1.2.3.tar.gz"
   sha256 "4ef5981c24fe6f5f4c9d4e955f396d48e56ef82b5b0c6fdf8cecb54572e17cf5"
