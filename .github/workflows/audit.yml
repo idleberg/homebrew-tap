@@ -23,17 +23,15 @@ jobs:
       uses: Homebrew/actions/setup-homebrew@master
 
     - name: Update Homebrew
-      if: matrix.os != 'ubuntu-latest'
+      if: matrix.os == 'macos-latest'
       run: |
         brew update --auto-update
 
-    - name: Reinstall Go
-      if: matrix.os != 'ubuntu-latest'
+    - name: Install Go
+      if: matrix.os == 'macos-latest'
       run: |
-        brew uninstall --force go
-        brew cleanup -s go
-        brew cleanup --prune-prefix
-        brew install go --force
+        brew unlink go@1.21
+        brew link --overwrite go
 
     - name: Tap Repository
       run: brew tap idleberg/asahi
