@@ -1,4 +1,4 @@
-name: audit+install
+name: Audit & Install Formulae
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
     - name: Tap Repository
       run: brew tap idleberg/asahi
 
-    - name: Audit Formulas
+    - name: Audit Formulae
       run: |
         for file in ./Formula/*.rb
         do
@@ -46,7 +46,7 @@ jobs:
           brew audit idleberg/asahi/$(basename ${file%.rb}) --online
         done
 
-    - name: Install Formulas
+    - name: Install Formulae
       run: |
         for file in ./Formula/*.rb
         do
