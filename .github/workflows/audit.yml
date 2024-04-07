@@ -30,8 +30,10 @@ jobs:
     - name: Install Go
       if: matrix.os == 'macos-latest'
       run: |
-        brew unlink go@1.21
-        brew link --overwrite go
+        brew uninstall --force go@1.21
+        brew cleanup -s go@1.21
+        brew cleanup --prune-prefix
+        brew install --force go
 
     - name: Tap Repository
       run: brew tap idleberg/asahi
