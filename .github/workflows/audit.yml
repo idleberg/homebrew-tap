@@ -30,6 +30,7 @@ jobs:
         brew cleanup -s go
         brew cleanup --prune-prefix
         brew install go
+        brew link --overwrite go
 
     - name: Tap Repository
       run: brew tap idleberg/asahi
