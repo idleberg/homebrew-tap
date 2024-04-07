@@ -26,11 +26,14 @@ jobs:
       if: matrix.os != 'ubuntu-latest'
       run: |
         brew update --auto-update
+
+    - name: Reinstall Go
+      if: matrix.os != 'ubuntu-latest'
+      run: |
         brew uninstall --force go
         brew cleanup -s go
         brew cleanup --prune-prefix
-        brew install go
-        brew link --overwrite go
+        brew install go --force
 
     - name: Tap Repository
       run: brew tap idleberg/asahi
