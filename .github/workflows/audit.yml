@@ -26,6 +26,7 @@ jobs:
       if: matrix.os != 'ubuntu-latest'
       run: |
         brew update --auto-update
+        brew uninstall go
 
     - name: Tap Repository
       run: brew tap idleberg/asahi
