@@ -1,4 +1,4 @@
-# :sunny: homebrew-asahi
+# :beer: homebrew-asahi
 
 > Unified tap to distribute my Homebrew formulas.
 
