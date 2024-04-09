@@ -11,7 +11,7 @@ Tap this repository to install the available formulas:
 
 ```sh
 $ brew tap idleberg/asahi
-$ brew install <formula>
+$ brew install <formula> --build-from-source
 ```
 
 Alternatively, you can install any packages skipping the tap step:
