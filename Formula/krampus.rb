@@ -23,6 +23,6 @@ class Krampus < Formula
   end
 
   test do
-    assert_equal "WARN no process found listening on port 12345", shell_output("#{bin}/gum 12345").chomp
+    assert_equal "WARN no process found listening on port 12345", shell_output("#{bin}/krampus 12345").chomp
   end
 end
