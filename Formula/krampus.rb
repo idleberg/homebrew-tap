@@ -4,6 +4,7 @@ class Krampus < Formula
   url "https://github.com/idleberg/krampus/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "e84243c92d44f8e1a5ef63af71b0f813be7b1c5656cb2d0ff72adcbeaad59d8c"
   license "MIT"
+  version "0.2.0"
 
   bottle do
     sha256 cellar: :any_skip_relocation, arm64_sonoma:   "558728b5567bd1dc68e9612a51df346c56019de2f69df592150e77e46a979061"
