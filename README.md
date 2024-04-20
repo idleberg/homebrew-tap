@@ -17,7 +17,7 @@ $ brew install <formula> --build-from-source
 Alternatively, you can install any packages skipping the tap step:
 
 ```sh
-$ brew install idleberg/asahi/<formula>
+$ brew install idleberg/asahi/<formula> --build-from-source
 ```
 
 ## License
