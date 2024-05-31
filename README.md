@@ -1,23 +1,23 @@
-# :beer: homebrew-asahi
+# :beer: homebrew-tap
 
 > Unified tap to distribute my Homebrew formulas.
 
-![License](https://img.shields.io/github/license/idleberg/homebrew-asahi?style=for-the-badge)
-[![Build](https://img.shields.io/github/actions/workflow/status/idleberg/homebrew-asahi/audit.yml?style=for-the-badge)](https://github.com/idleberg/homebrew-asahi/actions)
+![License](https://img.shields.io/github/license/idleberg/homebrew-tap?style=for-the-badge)
+[![Build](https://img.shields.io/github/actions/workflow/status/idleberg/homebrew-tap/audit.yml?style=for-the-badge)](https://github.com/idleberg/homebrew-tap/actions)
 
 ## Usage
 
 Tap this repository to install the available formulas:
 
 ```sh
-$ brew tap idleberg/asahi
+$ brew tap idleberg/tap
 $ brew install <formula> --build-from-source
 ```
 
 Alternatively, you can install any packages skipping the tap step:
 
 ```sh
-$ brew install idleberg/asahi/<formula>
+$ brew install idleberg/tap/<formula>
 ```
 
 ## License

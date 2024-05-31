@@ -36,14 +36,14 @@ jobs:
         brew install --force go
 
     - name: Tap Repository
-      run: brew tap idleberg/asahi
+      run: brew tap idleberg/tap
 
     - name: Audit Formulae
       run: |
         for file in ./Formula/*.rb
         do
           echo "Auditing $file"
-          brew audit idleberg/asahi/$(basename ${file%.rb}) --online
+          brew audit idleberg/tap/$(basename ${file%.rb}) --online
         done
 
     - name: Install Formulae
@@ -51,5 +51,5 @@ jobs:
         for file in ./Formula/*.rb
         do
           echo "Installing $file"
-          brew install idleberg/asahi/$(basename ${file%.rb}) --build-from-source
+          brew install idleberg/tap/$(basename ${file%.rb}) --build-from-source
         done
