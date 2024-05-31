@@ -17,7 +17,7 @@ $ brew install <formula> --build-from-source
 Alternatively, you can install any packages skipping the tap step:
 
 ```sh
-$ brew install idleberg/tap/<formula>
+$ brew install idleberg/tap/<formula> --build-from-source
 ```
 
 ## License
