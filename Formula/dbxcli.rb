@@ -29,6 +29,6 @@ class Dbxcli < Formula
   end
 
   test do
-    system "#{bin}/dbxcli", "--version"
+    system "bin/dbxcli", "--version"
   end
 end
