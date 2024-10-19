@@ -13,7 +13,7 @@ class Dbxcli < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "7f4f8b62a3bced7309be6d3d316c9b3594c16a27c71d8a4952ba7d0d4a7f5be9"
   end
 
-  if OS.mac?
+  if OS.mac? and && Hardware::CPU.intel?
     url "https://github.com/dropbox/dbxcli/releases/download/v3.0.0/dbxcli-darwin-amd64"
     sha256 "1149a2aa6a89829c6d540d04cc1db8cf5bb27e3d8b0ec6b32d830a6818bd7573"
   elsif OS.linux? && Hardware::CPU.intel?
