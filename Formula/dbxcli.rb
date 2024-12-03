@@ -16,7 +16,7 @@ class Dbxcli < Formula
   end
 
   def install
-    bin.install "dbxcli-#{OS.mac? ? "darwin" : "linux"}-#{Hardware::CPU.arm? ? "arm" : "amd64"}" => "dbxcli"
+    bin.install "dbxcli-darwin-amd64" => "dbxcli"
   end
 
   test do
