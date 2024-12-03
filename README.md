@@ -2,7 +2,7 @@
 
 > Unified tap to distribute my Homebrew formulas.
 
-![License](https://img.shields.io/github/license/idleberg/homebrew-tap?style=for-the-badge)
+![License](https://img.shields.io/github/license/idleberg/homebrew-tap?color=blue&style=for-the-badge)
 [![Build](https://img.shields.io/github/actions/workflow/status/idleberg/homebrew-tap/audit.yml?style=for-the-badge)](https://github.com/idleberg/homebrew-tap/actions)
 
 ## Usage
