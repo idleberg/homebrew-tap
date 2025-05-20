@@ -1,5 +1,5 @@
 class Nixfmt < Formula
-  desc "The official formatter for Nix language code, intended to easily apply a uniform style."
+  desc "Command-line tool to format Nix language code"
   homepage "https://github.com/NixOS/nixfmt"
   url "https://github.com/NixOS/nixfmt/archive/refs/tags/v0.6.0.tar.gz"
   sha256 "abbe204306daab5b3908abdcdf3af78b7d5a4a062ef4c39197ec612a2ebc4354"
