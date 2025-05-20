@@ -24,6 +24,6 @@ class Nixfmt < Formula
   end
 
   test do
-    assert_equal "v#{version}", shell_output("#{bin}/nixfmt --version").chomp
+    assert_equal "nixfmt v#{version}", shell_output("#{bin}/nixfmt --version").chomp
   end
 end
