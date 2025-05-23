@@ -18,8 +18,7 @@ class Alejandra < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "build", "--release", *std_cargo_args.reject { |arg| arg["--root"] || arg["--path"] }
-    bin.install "target/release/alejandra" => "alejandra"
+    system "cargo", "install", *std_cargo_args(path: "src/alejandra_cli")
   end
 
   test do
