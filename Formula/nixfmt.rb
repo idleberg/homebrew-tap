@@ -4,6 +4,7 @@ class Nixfmt < Formula
   url "https://github.com/NixOS/nixfmt/archive/refs/tags/v0.6.0.tar.gz"
   sha256 "abbe204306daab5b3908abdcdf3af78b7d5a4a062ef4c39197ec612a2ebc4354"
   license "MPL-2.0"
+  head "https://github.com/NixOS/nixfmt.git", branch: "master"
 
   depends_on "cabal-install" => :build
   depends_on "ghc" => :build

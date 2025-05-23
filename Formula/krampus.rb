@@ -4,6 +4,7 @@ class Krampus < Formula
   url "https://github.com/idleberg/krampus/archive/refs/tags/v0.2.1.tar.gz"
   sha256 "e4a6a92940c38ebd8f483ef23a4364d5f9f5fe8713e364e6bb60d2297a48085f"
   license "MIT"
+  head "https://github.com/idleberg/krampus.git", branch: "main"
 
   depends_on "go" => :build
 

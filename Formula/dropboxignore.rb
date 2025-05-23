@@ -4,6 +4,7 @@ class Dropboxignore < Formula
   url "https://github.com/sp1thas/dropboxignore/archive/refs/tags/v1.2.3.tar.gz"
   sha256 "4ef5981c24fe6f5f4c9d4e955f396d48e56ef82b5b0c6fdf8cecb54572e17cf5"
   license "GPL-3.0-only"
+  head "https://github.com/sp1thas/dropboxignore.git", branch: "master"
 
   depends_on "diffutils"
   depends_on "grep"
