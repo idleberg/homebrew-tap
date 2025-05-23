@@ -19,13 +19,13 @@ Tap this repository to install the available formulas:
 
 ```sh
 $ brew tap idleberg/tap
-$ brew install <formula> --build-from-source
+$ brew install <formula>
 ```
 
 Alternatively, you can install any packages skipping the tap step:
 
 ```sh
-$ brew install idleberg/tap/<formula> --build-from-source
+$ brew install idleberg/tap/<formula>
 ```
 
 ## License
