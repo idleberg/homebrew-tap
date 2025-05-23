@@ -1,5 +1,5 @@
 class Alejandra < Formula
-  desc "The Uncompromising Nix Code Formatter"
+  desc "Command-line tool for formatting Nix Code"
   homepage "https://kamadorueda.com/alejandra/"
   url "https://github.com/kamadorueda/alejandra/archive/refs/tags/4.0.0.tar.gz"
   sha256 "f3f9989c3fb6a56e2050bf5329692fae32a2b54be7c0652aa394afe4660ebb74"
@@ -19,7 +19,7 @@ class Alejandra < Formula
 
   def install
     system "cargo", "build", "--release", "--locked"
-     bin.install "target/release/alejandra" => "alejandra"
+    bin.install "target/release/alejandra" => "alejandra"
   end
 
   test do
