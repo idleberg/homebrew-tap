@@ -27,8 +27,11 @@ class Nixfmt < Formula
     assert_equal "nixfmt v#{version}", shell_output("#{bin}/nixfmt --version").chomp
 
     ENV["LC_ALL"] = "en_US.UTF-8"
-    (testpath/"nixfmt_test.nix").write "{description=\"Demo\";outputs={self}:{};}"
+    input_nix = "{description=\"Demo\";outputs={self}:{};}"
+    output_nix = "{\n  description = \"Demo\";\n  outputs = {self}: {};\n}"
+
+    (testpath/"nixfmt_test.nix").write input_nix
     system bin/"nixfmt", "nixfmt_test.nix"
-    assert_equal "{\n  description = \"Demo\";\n  outputs = {self}: {};\n}", (testpath/"nixfmt_test.nix").read.strip
+    assert_equal output_nix, (testpath/"nixfmt_test.nix").read.strip
   end
 end

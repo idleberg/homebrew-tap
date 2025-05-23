@@ -16,8 +16,11 @@ class Alejandra < Formula
     assert_equal "Alejandra #{version}", shell_output("#{bin}/alejandra --version").chomp
 
     ENV["LC_ALL"] = "en_US.UTF-8"
-    (testpath/"alejandra_test.nix").write "{description=\"Demo\";outputs={self}:{};}"
+    input_nix = "{description=\"Demo\";outputs={self}:{};}"
+    output_nix = "{\n  description = \"Demo\";\n  outputs = {self}: {};\n}"
+
+    (testpath/"alejandra_test.nix").write input_nix
     system bin/"alejandra", "alejandra_test.nix"
-    assert_equal "{\n  description = \"Demo\";\n  outputs = {self}: {};\n}", (testpath/"alejandra_test.nix").read.strip
+    assert_equal output_nix, (testpath/"alejandra_test.nix").read.strip
   end
 end
