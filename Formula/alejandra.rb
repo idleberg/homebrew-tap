@@ -14,5 +14,10 @@ class Alejandra < Formula
 
   test do
     assert_equal "Alejandra #{version}", shell_output("#{bin}/alejandra --version").chomp
+
+    ENV["LC_ALL"] = "en_US.UTF-8"
+    (testpath/"alejandra_test.nix").write "{description=\"Demo\";outputs={self}:{};}"
+    system bin/"alejandra", "alejandra_test.nix"
+    assert_equal "{\n  description = \"Demo\";\n  outputs = {self}: {};\n}", (testpath/"alejandra_test.nix").read.strip
   end
 end
