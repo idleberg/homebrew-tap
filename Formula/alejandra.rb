@@ -3,7 +3,7 @@ class Alejandra < Formula
   homepage "https://kamadorueda.com/alejandra/"
   url "https://github.com/kamadorueda/alejandra/archive/refs/tags/4.0.0.tar.gz"
   sha256 "f3f9989c3fb6a56e2050bf5329692fae32a2b54be7c0652aa394afe4660ebb74"
-  license "UNLICENSE"
+  license "Unlicense"
 
   bottle do
     sha256 cellar: :any_skip_relocation, arm64_sequoia: "edd2d0dcc5ca368334522b123210e7d9d3336efc5e0091f12500fa02a8e304d8"
