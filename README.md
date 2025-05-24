@@ -22,7 +22,6 @@ $ brew install idleberg/asahi/<formula>
 
 ## Formulas
 
-- `alejandra`: The Uncompromising Nix Code Formatter
 - `dbxcli`: Command-line client for Dropbox
 - `dropboxignore`: Command-line tool for ignoring files in Dropbox
 - `krampus`: Command-line tool to kill one or more processes by their port number
